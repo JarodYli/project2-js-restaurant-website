@@ -56,3 +56,18 @@ header.masthead {
   .bottom-right {
       margin-left: 100%;
   }
+
+  .nav-tabs {
+      width:100%;
+      font-size:32px;
+  }
+
+  .footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(69, 143, 97, 0.774);
+    color: white;
+    text-align: center;
+ }

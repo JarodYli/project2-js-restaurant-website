@@ -2,33 +2,32 @@
 
 
 
-const url = 'https://entree-f18.herokuapp.com/v1/menu/8';
+const url = 'https://entree-f18.herokuapp.com/v1/menu/';
 
 async function loadItems() {
-    var app = "";
+    
     var menu = "menu";
     var j = 1;
 
-    for (j; j <= 4; j++) {
-        for (var i = 0; i < 8; i++) {
-            app = app + "<div class='card' id='item-'" + i + "><div class='card-body'>";
-            await fetch(url).then(function (response) {
-                return response.json();
-            })
-                .then(function (myJson) {
-                    console.log(JSON.stringify(myJson.menu_items[0].description));
-                    app = app + JSON.stringify(myJson.menu_items[0].description) + "</div></div>";
+    for (j; j < 6; j++) {
+        
+        var app = "";
+        await fetch(url + Math.floor((Math.random() * 9) + 6)).then(function (response) {
+            return response.json();
+        }).then(function (myJson) {
+            for (var i = 0; i < myJson.menu_items.length; i++) {
+                var x = Math.floor((Math.random() * 15) + 1)
+                app = app + "<div class='card' id='item-'" + i + "><div class='card-body'>";
+                console.log(JSON.stringify(myJson.menu_items[i].description));
+                app = app + JSON.stringify(myJson.menu_items[i].description) + "  " + x + "</div></div>";
 
-                });
+            }
+        });
 
 
-            document.getElementById("menu" + j).innerHTML = app;
-
-        }
+        document.getElementById("menu" + j).innerHTML = app;
 
     }
+
 }
 
-function newFunction() {
-    loadItems();
-}

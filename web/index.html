@@ -1,91 +1,116 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="/CSS/style.css">
 
 
 </head>
 
-  <body onload="loadItems()">
+<body onload="loadItems()">
 
-    
-        <!-- Top border image displaying food-->
-        <header class="masthead">
-                <div class="container">
-                  <div class="intro-text">
-                    <div class="intro-lead-in">Mainly FOod</div>
-                    <div class="intro text-uppercase">Eat something</div>
-                </div>
-                <div class="bottom">111-23f-87941</div>
-                <div class="bottom">348 E. Main St., Lexington, KY</div>
-                <div class="bottom">Hours. M-F 8AM-4PM</div>
-        
+
+    <!-- Top border image displaying food-->
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Mainly FOod</div>
+                <div class="intro text-uppercase">Eat something</div>
             </div>
-              </header>
+            <div class="bottom">111-23f-87941</div>
+            <div class="bottom">348 E. Main St., Lexington, KY</div>
+            <div class="bottom">Hours. M-F 8AM-4PM</div>
 
-        <!-- Restuarant name is in the top left corner of the function-->
-        
-        <!-- Contact info --- hours ------ address -->
+        </div>
+    </header>
 
-        <!-- breakfast lunch and dinner section:-->
+    <!-- Restuarant name is in the top left corner of the function-->
 
-        <!-- categories of breakfast lunch and dinner-->
+    <!-- Contact info --- hours ------ address -->
 
-        <!-- appetizers; specials; main courses; popular items-->
+    <!-- breakfast lunch and dinner section:-->
 
-        <!-- Items of categories(Menu)-->
-   
-        <!-- Filter/Search Bar-->
-  
+    <!-- categories of breakfast lunch and dinner-->
 
-      
-        <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#breakfast">Breakfast</a></li>
-                <li><a data-toggle="tab"><a data-toggle="tab" href="#lunch">Lunch</a></li>
-                <li><a data-toggle="tab"><a data-toggle="tab" href="#dinner">Dinner</a></li>
-                <li><a data-toggle="tab"><a data-toggle="tab" href="#appetizers">Appetizers</a></li>
-              </ul>
-             
-              <div class="tab-content">
-                    <div id="breakfast" class="tab-pane fade in active">
-                      <h3>Breakfast</h3>
-                      <div id="menu1"></div>
+    <!-- appetizers; specials; main courses; popular items-->
+
+    <!-- Items of categories(Menu)-->
+
+    <!-- Filter/Search Bar-->
+
+
+
+            <div class="container">
+                  
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#breakfast">Breakfast</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#lunch">Lunch</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#dinner">Dinner</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#appa">Appatizers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#desert">Desert</a>
+                      </li>
+                    </ul>
+                  
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div id="breakfast" class="container tab-pane fade"><br>
+                        <h3>Breakfast</h3>
+                            <p id="menu1"></p>
+                      </div>
+                      <div id="lunch" class="container tab-pane fade"><br>
+                        <h3>Lunch</h3>
+                            <p id="menu2"></p>
+                      </div>
+                      <div id="dinner" class="container tab-pane fade"><br>
+                        <h3>Dinner</h3>
+                            <p id="menu3"></p>
+                      </div>
+                      <div id="appa" class="container tab-pane fade"><br>
+                        <h3>Appatizers</h3>
+                            <p id="menu4"></p>
+                      </div>
+                      <div id="desert" class="container tab-pane fade"><br>
+                        <h3>Desert</h3>
+                            <p id="menu5"></p>
+                      </div>
                     </div>
-                    <div id="lunch" class="tab-pane fade">
-                      <h3>Lunch</h3>
-                      <div id="menu2"></div>
-                    </div>
-                    <div id="dinner" class="tab-pane fade">
-                      <h3>Menu 2</h3>
-                      <div id="menu3"></div>
-                    </div>
-                    <div id="appetizers" class="tab-pane fade">
-                      <h3>Menu 3</h3>
-                      <div id="menu4"></div>
-                    </div>
-                   
-                   
-                
-        
-        
-            
 
-        <!-- Left hand display:-->
-                <!-- Total of selcted items-->
+                    <div class="footer">
+                          <p>Eat anything</p>
+                        </div>
+                  </div>
 
-                 <!-- cart displaying items-->
 
-                 <!-- Checkout Button-->
 
-                 <!--Favorites Button-->
-   
+
+
+
+    <!-- Left hand display:-->
+    <!-- Total of selcted items-->
+
+    <!-- cart displaying items-->
+
+    <!-- Checkout Button-->
+
+    <!--Favorites Button-->
 
 
 
@@ -96,14 +121,19 @@
 
 
 
-      
+
+
     <!-- Optional JavaScript -->
 
     <script src="/JS/main.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
